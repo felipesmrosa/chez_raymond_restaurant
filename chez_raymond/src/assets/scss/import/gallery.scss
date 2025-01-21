@@ -1,0 +1,19 @@
+@use "../global.scss" as global;
+
+.gallery {
+    text-align: center;
+    padding: 40px;
+    background-color: global.$light;
+
+    @media (max-width: 1024px) {
+        padding: 30px; // Diminui o padding em telas médias
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px; // Diminui ainda mais o padding em telas pequenas
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px; // Diminui para 20px em telas extra pequenas (como smartphones)
+    }
+}

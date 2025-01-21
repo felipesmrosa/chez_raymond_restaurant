@@ -1,0 +1,73 @@
+@use "../global.scss" as global;
+
+.hours {
+    text-align: center;
+    background-color: global.$light;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        color: global.$dark;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .hours__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 600px;
+        /* Limita a largura máxima */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
+    }
+
+    .hours__item {
+        background-color: global.$text-light;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        /* Limita a largura dos itens */
+
+        h3 {
+            font-size: 1.5rem;
+            color: global.$text-dark;
+            letter-spacing: 4px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: global.$text-dark;
+        }
+    }
+
+    .hours__button {
+        background-color: global.$accent;
+        color: global.$text-light;
+
+        padding: 8px 16px;
+        border: 2px solid global.$accent;
+        border-radius: 28px;
+        margin: 30px 0px 0px 0px;
+        cursor: pointer;
+
+        font-size: 18px;
+
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: global.$accent;
+        }
+    }
+}

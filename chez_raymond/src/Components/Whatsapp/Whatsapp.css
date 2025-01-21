@@ -1,0 +1,43 @@
+/* Estilos para o ícone do WhatsApp flutuante */
+.whatsapp-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Estilo para o fundo piscando */
+.whatsapp-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #25d366; /* Cor de fundo do WhatsApp */
+    animation: blinkBackground 2s infinite; /* Animação de fundo piscando */
+}
+
+/* Estilo para o ícone do WhatsApp */
+.whatsapp-icon {
+    font-size: 3rem; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+    transition: transform 1s ease; /* Suaviza a transição do ícone */
+}
+
+/* Animação de piscar no fundo */
+@keyframes blinkBackground {
+    0% {
+        background-color: #25d366; /* Cor normal */
+    }
+    50% {
+        background-color: #40ff86; /* Cor do fundo durante o "piscar" */
+    }
+    100% {
+        background-color: #25d366; /* Cor normal */
+    }
+}
+
+/* Efeito de hover (aumenta o ícone quando o mouse passa por cima) */
+.whatsapp-floating:hover .whatsapp-icon {
+    transform: scale(1.1);
+}
