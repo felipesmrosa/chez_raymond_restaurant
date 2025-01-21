@@ -13,7 +13,9 @@ export function Header() {
     return (
         <header className="header">
             <nav>
-                <img src={logo} alt="Logo" />
+                <Link to="/">
+                    <img src={logo} alt="Logo" />
+                </Link>
                 <ul className={menuOpen ? "open" : ""}>
                     <li onClick={toggleMenu}><Link to="/">Início</Link></li>
                     {/* Link para abrir o PDF em uma nova aba */}

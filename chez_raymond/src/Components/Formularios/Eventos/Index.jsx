@@ -6,6 +6,9 @@ export function EventsForm() {
     const [date, setDate] = useState("");
     const [eventType, setEventType] = useState("");
 
+    // Obtém a data de hoje no formato YYYY-MM-DD para usar no atributo "min"
+    const today = new Date().toISOString().split("T")[0];
+
     // Função para formatar a data no formato DD/MM/YYYY
     const formatDate = (dateString) => {
         const [year, month, day] = dateString.split("-");
@@ -63,6 +66,7 @@ O evento será de ${eventType}.`;
                         id="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
+                        min={today} // Define a data mínima como hoje
                         required
                     />
                 </div>
@@ -77,7 +81,7 @@ O evento será de ${eventType}.`;
                         required
                     />
                 </div>
-                <button type="submit" className="submit-btn">Reservar</button>
+                <button type="submit" className="submit-btn">SOLICITAR ORÇAMENTO</button>
             </form>
         </div>
     );

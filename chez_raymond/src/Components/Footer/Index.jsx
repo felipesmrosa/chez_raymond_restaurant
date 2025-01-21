@@ -1,5 +1,6 @@
 import logo from "@/assets/image/logo_branca.png";
-import { FaEnvelope, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import rosatech from "@/assets/image/rosatech.svg";
+import { FaInstagram } from "react-icons/fa";
 
 export function Footer() {
     return (
@@ -12,15 +13,7 @@ export function Footer() {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/chezraymondoficial/">
                         <FaInstagram />Instagram
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=5547984054573&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20o%20restaurante!&type=phone_number&app_absent=0">
-                        <FaWhatsapp />WhatsApp
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/chezraymondoficial">
-                        <FaFacebook />Facebook
-                    </a>
-                    <a href="mailto:contato@chezraymond.com" rel="noopener noreferrer">
-                        <FaEnvelope />E-mail
-                    </a>
+                    <p>R. Floriano Peixoto, 610 - Cabeçudas, Itajaí - SC</p>
                 </div>
 
                 <div className="location">
@@ -30,9 +23,21 @@ export function Footer() {
                         allowFullScreen=""
                         loading="lazy">
                     </iframe>
-                    <p>R. Floriano Peixoto, 610 - Cabeçudas, Itajaí - SC</p>
                 </div>
             </div>
+
+            <div className="desenvolvidoPor">
+                <span className="desenvolvidoPor__icon">
+                    <img src={rosatech} alt="Logo RosaTech" />
+                </span>
+                <p>
+                    Desenvolvido por:{" "}
+                    <a target="_blank" rel="noopener noreferrer" href="https://rosa-tech.vercel.app/">
+                        RosaTech
+                    </a>
+                </p>
+            </div>
+
         </footer>
     );
 }

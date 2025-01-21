@@ -5,6 +5,9 @@ export function ReservationForm() {
     const [quantity, setQuantity] = useState("");
     const [date, setDate] = useState("");
 
+    // Obtém a data de hoje no formato YYYY-MM-DD para usar no atributo "min"
+    const today = new Date().toISOString().split("T")[0];
+
     // Função para formatar a data no formato DD/MM/YYYY
     const formatDate = (dateString) => {
         const [year, month, day] = dateString.split("-");
@@ -30,7 +33,7 @@ export function ReservationForm() {
 
     return (
         <div className="form-container">
-            <h2>REALIZE SUA RESERVA</h2>
+            <h2>FAÇA SUA RESERVA</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Nome:</label>
@@ -61,10 +64,11 @@ export function ReservationForm() {
                         id="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
+                        min={today} // Define a data mínima como hoje
                         required
                     />
                 </div>
-                <button type="submit" className="submit-btn">Reservar</button>
+                <button type="submit" className="submit-btn">SOLICITAR ORÇAMENTO</button>
             </form>
         </div>
     );
