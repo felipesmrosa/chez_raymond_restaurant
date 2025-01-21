@@ -6,9 +6,9 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 export function About() {
     const images = [
-        "../../src/assets/image/foto1.jpg",
-        "../../src/assets/image/foto2.jpg",
-        "../../src/assets/image/foto3.jpg",
+        "/foto1.jpg",
+        "/foto2.jpg",
+        "/foto3.jpg",
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
 
