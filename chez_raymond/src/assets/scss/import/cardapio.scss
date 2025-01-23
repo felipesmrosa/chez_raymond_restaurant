@@ -1,68 +1,56 @@
 @use "../global.scss" as global;
 
-.menu-section {
-    padding: 4rem 2rem;
-    background-color: global.$light;
-    text-align: center;
+.cardapio {
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
+    @media (max-width: 1024px) {
+        width: 110%;
+    }
+
+    &__container {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
         h1 {
             font-size: 32px;
-            color: global.$dark;
             text-transform: uppercase;
         }
 
-        p {
-            font-size: 20px;
-        }
-    }
 
-    .menu-subtitle {
-        font-size: 1.125rem;
-        color: #555555;
-        max-width: 600px;
-    }
 
-    a {
-        padding: 0.75rem 1.5rem;
-        font-size: 1.2rem;
-        background: global.$accent;
-        border: 2px solid global.$accent;
-        color: global.$light;
-        border-radius: 28px;
-        text-decoration: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: background 0.3s;
-        
-        &:hover {
+        &--subtitulo {
+            font-size: 26px;
             color: global.$accent;
-            background-color: transparent;
-        }
-    }
+            margin-bottom: 15vh;
 
-    @media (max-width: 768px) {
-        .menu-title {
-            font-size: 1.75rem;
+            @media (max-width: 1366px) {
+                margin-bottom: 20vh;
+                /* Ajuste para telas grandes */
+            }
+
+            @media (max-width: 1024px) {
+                margin-bottom: 10vh;
+                /* Ajuste para telas médias */
+            }
+
+            @media (max-width: 480px) {
+                margin-bottom: 2vh;
+                /* Ajuste para telas pequenas */
+            }
+
         }
 
-        .menu-subtitle {
-            font-size: 1rem;
-        }
-
-        .menu-button {
-            font-size: 0.875rem;
-            padding: 0.65rem 1.2rem;
+        &--button {
+            border: 2px solid global.$accent;
+            background: global.$accent;
+            padding: 10px 16px;
+            color: global.$light;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            border-radius: 28px;
         }
     }
 }

@@ -364,6 +364,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
 
     @media (max-width: 1024px) {
         flex-direction: column;
