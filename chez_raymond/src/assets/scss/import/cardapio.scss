@@ -1,0 +1,68 @@
+@use "../global.scss" as global;
+
+.menu-section {
+    padding: 4rem 2rem;
+    background-color: global.$light;
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        h1 {
+            font-size: 32px;
+            color: global.$dark;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .menu-subtitle {
+        font-size: 1.125rem;
+        color: #555555;
+        max-width: 600px;
+    }
+
+    a {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
+        background: global.$accent;
+        border: 2px solid global.$accent;
+        color: global.$light;
+        border-radius: 28px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background 0.3s;
+        
+        &:hover {
+            color: global.$accent;
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .menu-title {
+            font-size: 1.75rem;
+        }
+
+        .menu-subtitle {
+            font-size: 1rem;
+        }
+
+        .menu-button {
+            font-size: 0.875rem;
+            padding: 0.65rem 1.2rem;
+        }
+    }
+}

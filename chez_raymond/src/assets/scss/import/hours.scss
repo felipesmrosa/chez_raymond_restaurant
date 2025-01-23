@@ -5,7 +5,7 @@
     background-color: global.$light;
     padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     h1 {
         color: global.$dark;
@@ -16,6 +16,7 @@
     h4 {
         margin-bottom: 20px;
         font-size: 26px;
+        color: global.$accent;
     }
 
     .hours__content {
@@ -58,14 +59,12 @@
     .hours__button {
         background-color: global.$accent;
         color: global.$text-light;
-
-        padding: 8px 16px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
         border: 2px solid global.$accent;
         border-radius: 28px;
         margin: 30px 0px 0px 0px;
         cursor: pointer;
-
-        font-size: 18px;
 
         transition: 0.3s all ease-in-out;
 

@@ -18,10 +18,9 @@ export function App() {
         <Header />
         <FloatingWhatsapp />
         <Routes>
-          {/* Página inicial, que pode ser a home */}
           <Route path="/" element={<Geral />} />
-          <Route path="/reservas" element={<ReservationForm />} /> {/* Página de reservas */}
-          <Route path="/eventos" element={<EventsForm />} /> {/* Página de eventos */}
+          <Route path="/reservas" element={<ReservationForm />} />
+          <Route path="/eventos" element={<EventsForm />} />
         </Routes>
         <Footer />
       </Router>

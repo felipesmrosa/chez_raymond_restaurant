@@ -11,7 +11,7 @@ export function Footer() {
                 </div>
                 <div className="social">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/chezraymondoficial/">
-                        <FaInstagram />Instagram
+                        <FaInstagram />
                     </a>
                     <p>R. Floriano Peixoto, 610 - Cabeçudas, Itajaí - SC</p>
                 </div>

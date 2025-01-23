@@ -103,7 +103,8 @@ body {
         }
 
         .carousel-image {
-            max-width: 100%; // Deixar a imagem com 100% da largura
+            max-width: 100%;
+            height: 22vh;
         }
     }
 }
@@ -271,19 +272,18 @@ footer {
             flex-direction: column;
 
             a {
-                color: $text-light;
+                color: $light;
                 text-decoration: none;
-                font-size: 1.2rem;
-                padding: 8px 16px;
+                font-size: 1.8rem;
+                padding: 10px;
                 border-radius: 30px;
-                border: 2px solid $text-light;
+                border: 2px solid $light;
                 transition: all 0.3s ease;
                 text-align: center;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 4px;
-                width: 43%;
 
                 &:hover {
                     background-color: $text-light;
@@ -291,6 +291,7 @@ footer {
                     border-color: $text-light;
                 }
             }
+
             p {
                 user-select: text !important;
             }
@@ -347,7 +348,7 @@ footer {
         position: relative;
         width: 100%;
         z-index: 9;
-    
+
         a {
             color: #1190cb;
             text-decoration: none;
@@ -356,6 +357,16 @@ footer {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+.lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
     }
 }
 
