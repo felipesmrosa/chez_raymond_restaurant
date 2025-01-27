@@ -31,10 +31,14 @@
         background-color: global.$text-light;
         border-radius: 8px;
         padding: 14px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 100%;
+        box-shadow: 0px 2px 20px 0px rgb(197 197 197);
+        width: 1200px;
         max-width: 200px;
         transition: 0.3s all ease-in-out;
+
+        @media (max-width: 480px) {
+            max-width: 180px;
+        }
 
         h3 {
             font-size: 1.35rem;
@@ -55,12 +59,15 @@
 
     .hours__button {
         background-color: global.$accent;
-        color: global.$text-light;
+
         padding: 0.75rem 1.5rem;
         font-size: 1.2rem;
         border: 2px solid global.$accent;
         border-radius: 28px;
         cursor: pointer;
+        color: global.$text-light;
+        text-decoration: none;
+
 
         transition: 0.3s all ease-in-out;
 

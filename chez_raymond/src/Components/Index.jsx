@@ -8,6 +8,7 @@ export function Geral() {
             <Gallery />
             <div className="lado">
                 <Cardapio />
+                <hr />
                 <Hours />
             </div>
         </div>

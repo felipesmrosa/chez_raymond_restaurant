@@ -1,11 +1,6 @@
-import { useNavigate } from "react-router-dom";
-
 export function Hours() {
-    const navigate = useNavigate();
 
-    const handleClick = () => {
-        navigate("/reservas");
-    };
+    const link = "https://api.whatsapp.com/send/?phone=5547984054573&text=Ol%C3%A1%21+Gostaria+de+fazer+uma+reserva+no+restaurante&type=phone_number&app_absent=0"
 
     return (
         <section className="hours">
@@ -21,7 +16,9 @@ export function Hours() {
                     <p>Das 19h às 23h30</p>
                 </div>
             </div>
-            <button onClick={handleClick} className="hours__button">FAZER UMA RESERVA</button>
+            <a href={link} className="hours__button" target="_blank">
+                FAZER UMA RESERVA
+            </a>
         </section>
     );
 }

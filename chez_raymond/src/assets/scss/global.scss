@@ -104,7 +104,7 @@ body {
 
         .carousel-image {
             max-width: 100%;
-            height: 22vh;
+            height: 28vh;
         }
     }
 }
@@ -113,10 +113,15 @@ header {
     background-color: $dark;
     color: $text-light;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
         padding: 10px 15%;
         position: relative;
 
@@ -124,7 +129,11 @@ header {
             width: 150%; // Aumento de 50% no tamanho da logo
             max-width: 350px; // Limita o tamanho máximo da logo
             height: auto;
-            transition: width 0.3s ease; // Suaviza a transição de tamanho da logo
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
         ul {
@@ -177,45 +186,59 @@ header {
         }
     }
 
-    // Responsividade para telas menores ou iguais a 1024px
     @media (max-width: 1024px) {
         nav {
-            padding: 10px 20px;
-
             ul {
-                display: none; // Esconde o menu tradicional nas telas pequenas
-                position: fixed; // Fixa o menu no topo da tela
-                top: 0;
-                right: 0;
-                width: 100%;
-                height: 100vh; // Ocupa toda a altura da tela
-                background-color: $dark;
-                opacity: 0;
-                visibility: hidden;
-                z-index: -1; // Fica atrás do botão hamburguer
-                transition: opacity 0.3s ease, visibility 0.3s ease;
-
-                &.open {
-                    display: flex; // Torna o menu visível
-                    opacity: 1;
-                    visibility: visible;
-                    z-index: 1;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                li {
-                    font-size: 22px; // Aumenta o tamanho da fonte no menu mobile
-                    margin: 15px 0;
-                }
-            }
-
-            .hamburger {
-                display: flex; // Exibe o botão hamburguer
+                gap: 1.5rem;
             }
         }
     }
+
+    // Responsividade para telas menores ou iguais a 1024px
+    // @media (max-width: 1024px) {
+    //     nav {
+    //         padding: 10px 20px;
+    //         flex-direction: row;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //         gap: 3rem;
+
+
+    //         ul {
+    //             display: none; // Esconde o menu tradicional nas telas pequenas
+    //             position: fixed; // Fixa o menu no topo da tela
+    //             top: 0;
+    //             right: 0;
+    //             width: 100%;
+    //             height: 100vh; // Ocupa toda a altura da tela
+    //             background-color: $dark;
+    //             opacity: 0;
+    //             visibility: hidden;
+    //             z-index: -1; // Fica atrás do botão hamburguer
+    //             transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    //             &.open {
+    //                 display: flex; // Torna o menu visível
+    //                 opacity: 1;
+    //                 visibility: visible;
+    //                 z-index: 1;
+    //                 flex-direction: column;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //             }
+
+    //             li {
+    //                 font-size: 22px; // Aumenta o tamanho da fonte no menu mobile
+    //                 margin: 15px 0;
+    //             }
+    //         }
+
+    //         .hamburger {
+    //             display: flex; // Exibe o botão hamburguer
+    //         }
+    //     }
+    // }
 
     // Responsividade para telas extra pequenas (480px ou menor)
     @media (max-width: 480px) {
@@ -224,7 +247,7 @@ header {
 
             img {
                 width: 100%;
-                max-width: 260px; // Limita o tamanho da logo em telas muito pequenas
+                max-width: 350px; // Limita o tamanho da logo em telas muito pequenas
             }
         }
     }
@@ -367,17 +390,29 @@ footer {
     gap: 5rem;
     padding: 5rem;
 
+    hr {
+        height: 12rem;
+        border-color: transparent;
+        background-color: rgb(219, 219, 219);
+        border-radius: 28px;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
     @media (max-width: 1024px) {
         flex-direction: column;
+        padding: 1rem 2rem 2rem 2rem;
     }
 }
 
 
 .form-container {
-    background-color: $text-light;
+    background-color: $light;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 20px 0px rgb(197 197 197);
     width: 100%;
     max-width: 500px;
     margin: 40px auto;
@@ -406,7 +441,7 @@ label {
 input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid $light;
+    border: 1px solid #b6b6b6;
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s ease;
