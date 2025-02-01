@@ -22,90 +22,90 @@ body {
     background-color: $light;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden; // Garantir que a imagem não ultrapasse os limites do carrossel
+// .carousel {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     overflow: hidden; // Garantir que a imagem não ultrapasse os limites do carrossel
 
-    .carousel-image {
-        width: 100%;
-        max-width: 57%; // Ajustar a largura da imagem para 100% da tela
-        height: auto; // Manter a proporção da imagem
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
+//     .carousel-image {
+//         width: 100%;
+//         max-width: 57%; // Ajustar a largura da imagem para 100% da tela
+//         height: auto; // Manter a proporção da imagem
+//         border-radius: 10px;
+//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//         transition: transform 0.3s ease-in-out;
+//     }
 
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: $light;
-        color: $dark;
-        border: none;
-        font-size: 24px;
-        padding: 12px 20px;
-        cursor: pointer;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        opacity: 0.7;
-        transition: opacity 0.3s ease;
+//     .arrow {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         background: $light;
+//         color: $dark;
+//         border: none;
+//         font-size: 24px;
+//         padding: 12px 20px;
+//         cursor: pointer;
+//         border-radius: 50%;
+//         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+//         opacity: 0.7;
+//         transition: opacity 0.3s ease;
 
-        &:hover {
-            opacity: 1;
-        }
+//         &:hover {
+//             opacity: 1;
+//         }
 
-        &.left {
-            left: 22%; // Ajustar a posição das setas para telas menores
-        }
+//         &.left {
+//             left: 22%; // Ajustar a posição das setas para telas menores
+//         }
 
-        &.right {
-            right: 22%; // Ajustar a posição das setas para telas menores
-        }
-    }
+//         &.right {
+//             right: 22%; // Ajustar a posição das setas para telas menores
+//         }
+//     }
 
-    // Responsividade para telas menores
-    @media (max-width: 768px) {
-        .arrow {
-            font-size: 20px; // Reduzir o tamanho da seta
-            padding: 10px 15px; // Ajustar o padding
+//     // Responsividade para telas menores
+//     @media (max-width: 768px) {
+//         .arrow {
+//             font-size: 20px; // Reduzir o tamanho da seta
+//             padding: 10px 15px; // Ajustar o padding
 
-            &.left {
-                left: 6%; // Ajustar a posição das setas para telas menores
-            }
+//             &.left {
+//                 left: 6%; // Ajustar a posição das setas para telas menores
+//             }
 
-            &.right {
-                right: 6%; // Ajustar a posição das setas para telas menores
-            }
-        }
+//             &.right {
+//                 right: 6%; // Ajustar a posição das setas para telas menores
+//             }
+//         }
 
-        .carousel-image {
-            max-width: 90%; // Ajustar a largura máxima da imagem para telas menores
-        }
-    }
+//         .carousel-image {
+//             max-width: 90%; // Ajustar a largura máxima da imagem para telas menores
+//         }
+//     }
 
-    @media (max-width: 480px) {
-        .arrow {
-            font-size: 18px; // Diminuir ainda mais o tamanho das setas
-            padding: 8px 12px; // Ajustar o padding
+//     @media (max-width: 480px) {
+//         .arrow {
+//             font-size: 18px; // Diminuir ainda mais o tamanho das setas
+//             padding: 8px 12px; // Ajustar o padding
 
-            &.left {
-                left: 2%; // Ajustar a posição das setas para telas menores
-            }
+//             &.left {
+//                 left: 2%; // Ajustar a posição das setas para telas menores
+//             }
 
-            &.right {
-                right: 2%; // Ajustar a posição das setas para telas menores
-            }
-        }
+//             &.right {
+//                 right: 2%; // Ajustar a posição das setas para telas menores
+//             }
+//         }
 
-        .carousel-image {
-            max-width: 100%;
-            height: 28vh;
-        }
-    }
-}
+//         .carousel-image {
+//             max-width: 100%;
+//             height: 28vh;
+//         }
+//     }
+// }
 
 .header {
     &__image {
@@ -164,9 +164,9 @@ body {
         align-items: center;
         list-style: none;
         margin: 0;
-        gap: 6rem;
+        gap: 2rem;
         background-color: $accent;
-        padding: 2px 36px;
+        padding: 2px 20px;
         box-shadow: 0 0 20px 0px $dark;
         border-radius: 28px;
         position: relative; // Usado para o menu tradicional
