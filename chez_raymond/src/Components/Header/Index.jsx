@@ -31,7 +31,10 @@ export function Header() {
                         </a>
                     </li>
                 </ul>
-                <img src={logo} alt="" />
+                <span>
+                    <img src={logo} alt="" />
+                    <p>Desde 1985</p>
+                </span>
             </div>
         </div >
     );

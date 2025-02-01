@@ -12,7 +12,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    font-family: "Nunito";
+    font-family: "Urbanist";
     box-sizing: border-box;
     height: auto;
     user-select: none;
@@ -145,17 +145,28 @@ body {
         }
     }
 
-    img {
-        width: 100%; // Aumento de 50% no tamanho da logo
-        max-width: 600px; // Limita o tamanho máximo da logo
-        height: auto;
-        transition: all 0.3s ease-in-out;
+    span {
         z-index: 9;
+        text-align: center;
 
-        &:hover {
-            transform: scale(1.05);
+        p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: $light;
         }
 
+        img {
+            width: 100%; // Aumento de 50% no tamanho da logo
+            max-width: 600px; // Limita o tamanho máximo da logo
+            height: auto;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+        }
     }
 
     ul {
@@ -174,7 +185,7 @@ body {
         transition: opacity 0.3s ease, visibility 0.3s ease;
 
         li {
-            font-size: 18px;
+            font-size: 16px;
             text-transform: uppercase;
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -192,14 +203,20 @@ body {
     }
 
     @media (max-width: 1024px) {
-        img {
-            width: 500px;
+        span {
+
+            img {
+                width: 500px;
+            }
         }
     }
 
     @media (max-width: 768px) {
-        img {
-            width: 480px;
+        span {
+
+            img {
+                width: 480px;
+            }
         }
     }
 
@@ -210,13 +227,23 @@ body {
             }
         }
 
-        img {
-            width: 400px;
+        span {
+
+            p {
+                font-size: 12px;
+            }
+            img {
+                width: 380px;
+            }
         }
 
         ul {
             gap: 1.5rem;
             padding: 2px 14px;
+
+            li {
+                font-size: 15px;
+            }
         }
     }
 
@@ -469,7 +496,7 @@ footer {
 
     @media (max-width: 1024px) {
         flex-direction: column;
-        padding: 1rem 2rem 2rem 2rem;
+        padding: 3rem 2rem 3rem 2rem;
     }
 }
 
