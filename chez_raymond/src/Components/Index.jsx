@@ -5,7 +5,7 @@ import { Hours } from "./Hours/Index";
 export function Geral() {
     return (
         <div>
-            <Gallery />
+            {/* <Gallery /> */}
             <div className="lado">
                 <Cardapio />
                 <hr />
