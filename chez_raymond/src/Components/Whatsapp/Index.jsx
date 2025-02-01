@@ -3,7 +3,7 @@ import "./Whatsapp.css"; // Importando o CSS para animações e estilo
 
 export function FloatingWhatsapp() {
     const whatsappNumber = "5547984054573"; // Substitua pelo seu número do WhatsApp
-    const message = "Olá, gostaria de conhecer o restaurante!"; // Mensagem pré-definida
+    const message = "Olá! Gostaria de fazer uma reserva no restaurante"; // Mensagem pré-definida
 
     return (
         <a

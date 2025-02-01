@@ -6,9 +6,6 @@ export function Cardapio() {
         <section className="cardapio">
             <div className="cardapio__container">
                 <h1>conheça Nosso Cardápio</h1>
-                {/* <h4 style={{ color: '#fff' }} className="cardapio__container--subtitulo">
-                    .
-                </h4> */}
 
                 <div className="cardapio__container__itens">
                     <div className="cardapio__container__itens__item">
