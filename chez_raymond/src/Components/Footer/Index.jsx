@@ -13,6 +13,7 @@ export function Footer() {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/chezraymondoficial/">
                         <FaInstagram />
                     </a>
+                    <p>(47) 3348-7032 / (47) 3348-7015</p>
                     <p>R. Floriano Peixoto, 610 - Cabeçudas, Itajaí - SC</p>
                 </div>
 

@@ -1,0 +1,25 @@
+RewriteEngine On
+
+# Redireciona HTTP para HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Redireciona URLs antigas para a Home
+Redirect 301 /realize-seu-evento-no-chezraymond/ https://chezraymond.com.br/
+Redirect 301 /blog/ https://chezraymond.com.br/
+Redirect 301 /o-restaurante/ https://chezraymond.com.br/
+Redirect 301 /cardapio/ https://chezraymond.com.br/
+Redirect 301 /reservas/ https://chezraymond.com.br/
+Redirect 301 /dia-dos-namorados-cardapio-especial/ https://chezraymond.com.br/
+Redirect 301 /carnes/ https://chezraymond.com.br/
+Redirect 301 /aves/ https://chezraymond.com.br/
+Redirect 301 /massas/ https://chezraymond.com.br/
+Redirect 301 /sobremesas/ https://chezraymond.com.br/
+Redirect 301 /chez-raymond-eventos/ https://chezraymond.com.br/
+
+
+# Garante que o React Router funcione corretamente
+Options -MultiViews
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
